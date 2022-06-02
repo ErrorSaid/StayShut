@@ -1,2 +1,0 @@
-# StayShut
-EXILED 5 PLUGIN 
