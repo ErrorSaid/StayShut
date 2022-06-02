@@ -1,4 +1,5 @@
-﻿using Exiled.API.Features;
+using System;
+using Exiled.API.Features;
 
 namespace StayShut
 {
@@ -6,7 +7,10 @@ namespace StayShut
     {
         public StayShutEventHandler Handler;
         public override string Name => nameof(StayShut);
-        public override string Author => "KoukoCocoa";
+        public override string Author => "KoukoCocoa - Updated by ErrorSaid";
+        public override string Prefix { get; } = "stay_shut";
+        public override Version Version { get; } = new Version(0, 1, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(5, 2, 1);
 
         public override void OnEnabled()
         {
